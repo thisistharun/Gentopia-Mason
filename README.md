@@ -6,7 +6,7 @@ Author: Ziyu Yao (ziyuyao@gmu.edu)
 Copyright and license should go to Gentopia.AI.
 
 ## Installation 💻
-First, clone this repository: xx
+First, clone this repository:
 ```
 git clone git@github.com:LittleYUYU/Gentopia-Mason.git
 cd Gentopia-Mason

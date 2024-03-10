@@ -1,0 +1,66 @@
+INFO:root:Creating Config from file: ./gentpool/pool/tkalluru/agent.yaml
+INFO:root:Starting to load configuration from ./gentpool/pool/tkalluru/agent.yaml
+INFO:root:Successfully loaded configuration from ./gentpool/pool/tkalluru/agent.yaml
+INFO:root:--------------------
+INFO:root:[green]Welcome to Gentopia!
+INFO:root:--------------------
+INFO:root:[green]User: 
+INFO:root:tkalluru is thinking...
+INFO:root:Done
+INFO:root:[blue]tkalluru: 
+INFO:root:{"name":"search_author_by_name", "arguments":{
+  "author": "Ziyu Yao George Mason University",
+  "top_k": 5
+}}
+
+INFO:root:Calling function: search_author_by_name ...
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Ziyu%20Yao%20George%20Mason%20University
+INFO:httpx:HTTP Request: GET https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Ziyu%20Yao%20George%20Mason%20University "HTTP/1.1 200 OK"
+INFO:scholarly:Found 1 authors
+INFO:scholarly:No more author pages
+INFO:root:Done
+INFO:root:--------------------
+INFO:root:{'name': 'Ziyu Yao', 'uid': '4lYrMNUAAAAJ', 'affiliation': 'Assistant Professor, George Mason University', 'interests': ['Artificial Intelligence', 'Natural Language Processing', 'Question Answering', 'Human-in-the-loop', 'AI/NLP'], 'citation': 760}
+INFO:root:--------------------
+INFO:root:tkalluru is thinking...
+INFO:root:Done
+INFO:root:[blue]tkalluru: 
+INFO:root:{"name":"author_uid2paper", "arguments":{'uid': '4lYrMNUAAAAJ', 'sort_by': 'year', 'top_k': 5}}
+
+INFO:root:Calling function: author_uid2paper ...
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4lYrMNUAAAAJ&pagesize=100
+INFO:httpx:HTTP Request: GET https://scholar.google.com/citations?hl=en&user=4lYrMNUAAAAJ&pagesize=100 "HTTP/1.1 200 OK"
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4lYrMNUAAAAJ&view_op=list_works&sortby=pubdate&pagesize=100
+INFO:httpx:HTTP Request: GET https://scholar.google.com/citations?hl=en&user=4lYrMNUAAAAJ&view_op=list_works&sortby=pubdate&pagesize=100 "HTTP/1.1 200 OK"
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&tzom=300&user=4lYrMNUAAAAJ&view_op=list_mandates&pagesize=100
+INFO:httpx:HTTP Request: GET https://scholar.google.com/citations?hl=en&tzom=300&user=4lYrMNUAAAAJ&view_op=list_mandates&pagesize=100 "HTTP/1.1 200 OK"
+INFO:root:Done
+INFO:root:--------------------
+INFO:root:{'title': 'Lens: A Foundation Model for Network Traffic', 'pub_year': '2024', 'venue': 'arXiv preprint arXiv:2402.03646, 2024', 'citation': 0}
+
+{'title': 'Large language model cascades with mixture of thoughts representations for cost-efficient reasoning', 'pub_year': '2024', 'venue': 'ICLR 2024, 2024', 'citation': 9}
+
+{'title': 'Can large language models be good path planners? a benchmark and investigation on spatial-temporal reasoning', 'pub_year': '2023', 'venue': 'arXiv preprint arXiv:2310.03249, 2023', 'citation': 6}
+
+{'title': 'Instance Needs More Care: Rewriting Prompts for Instances Yields Better Zero-Shot Performance', 'pub_year': '2023', 'venue': 'arXiv preprint arXiv:2310.02107, 2023', 'citation': 0}
+
+{'title': 'Explaining large language model-based neural semantic parsers (student abstract)', 'pub_year': '2023', 'venue': 'Proceedings of the AAAI Conference on Artificial Intelligence 37 (13), 16308 …, 2023', 'citation': 1}
+INFO:root:--------------------
+INFO:root:tkalluru is thinking...
+INFO:root:Done
+INFO:root:[blue]tkalluru: 
+INFO:root:Here are the recent papers written by Ziyu Yao at George Mason University:
+
+1. "Lens: A Foundation Model for Network Traffic" published in arXiv preprint arXiv:2402.03646, 2024. [Citations: 0]
+2. "Large language model cascades with mixture of thoughts representations for cost-efficient reasoning" published in ICLR 2024, 2024. [Citations: 9]
+3. "Can large language models be good path planners? a benchmark and investigation on spatial-temporal reasoning" published in arXiv preprint arXiv:2310.03249, 2023. [Citations: 6]
+4. "Instance Needs More Care: Rewriting Prompts for Instances Yields Better Zero-Shot Performance" published in arXiv preprint arXiv:2310.02107, 2023. [Citations: 0]
+5. "Explaining large language model-based neural semantic parsers (student abstract)" published in Proceedings of the AAAI Conference on Artificial Intelligence 37 (13), 16308 …, 2023. [Citations: 1]
+INFO:root:Done
+INFO:root:[green]User: 
+INFO:root:tkalluru is thinking...
+INFO:root:Done
+INFO:root:[blue]tkalluru: 
+INFO:root:{"name":"google_search", "arguments":{'query': 'Lens: A Foundation Model for Network Traffic Ziyu Yao'}}
+
+INFO:root:Calling function: google_search ...
