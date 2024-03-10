@@ -34,7 +34,7 @@ class SongLyricsAgent:
         return "unknown", None
 
 if __name__ == "__main__":
-    api_key = "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"
+    api_key = " Removed  for privacy reasons "
     agent = SongLyricsAgent(api_key)
     
     print("Hi! How can I assist you?")
